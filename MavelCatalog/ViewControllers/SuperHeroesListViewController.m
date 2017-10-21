@@ -9,10 +9,14 @@
 #import "SuperHeroesListViewController.h"
 
 @interface SuperHeroesListViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *superHeroesTableView;
 
 @end
 
 @implementation SuperHeroesListViewController
+
+static NSString *MARVEL_PUBLIC_KEY = @"e5243fc00bc86a4fc14cb7c4e867b783";
+static NSString *MARVEL_PRIVATE_KEY = @"3b36fc7e2eb6e96aff189b1a7243b5fda2f29b3a";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
